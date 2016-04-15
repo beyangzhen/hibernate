@@ -18,7 +18,7 @@ import javax.persistence.TemporalType;
 import javax.persistence.Transient;
 
 @Entity
-@Table(name="teacher") //类名和表名不同的时候才写
+@Table(name="teacher") //类名和表名不相同的时候才写
 public class Teacher {
 	private int id;
 	private String name;
