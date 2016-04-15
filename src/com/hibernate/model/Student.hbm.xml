@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.hibernate.model.Student">
+		<id name="id">
+			<generator class="native"></generator> <!-- xml版的,id自动生成策略 -->
+		</id>
+		<property name="name"/>
+		<property name="age" column="age"/> <!-- 属性名和字段名不同的时候写 -->
+    </class>
+	
+</hibernate-mapping>
